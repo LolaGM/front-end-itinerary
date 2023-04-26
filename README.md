@@ -11,8 +11,8 @@
 <h2>2. Contents</h2>
 <ul>
 <li>HTML5 & CSS3</li>
-<li>Language Fundamentals & Best Practices</li>
-<li>JavaScript</li>
+<li>JavaScript: Language Fundamentals & Best Practices</li>
+<li>Infraestructure & Methodology</li>
 <li>Angular</li>
 </ul>  
    
