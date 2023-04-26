@@ -1,6 +1,6 @@
-<h1> front-end-itinerary</h1>
+<h1> Front-end itinerary from internship at Bosonit</h1>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:1000px; height:450px; margin:12px" src="https://user-images.githubusercontent.com/116545851/224990921-19f8cfa0-c88d-4367-960a-cc7769223c58.png" alt="My AlmuTicket"/>
+<img style="width:1000px; height:450px; margin:12px" src="/>
 </div>
 
 <h2>Description</h2>
@@ -9,21 +9,13 @@ Dealing with frontend development and uploaded to the repository https://github.
 
 <h2>Contents</h2>
 <ul>
-<li>HTML</li>
-<li>CSS</li>
+<li>HTML5 & CSS3</li>
+<li>Language Fundamentals & Best Practices</li>
 <li>JavaScript</li>
 <li>Angular</li>
 </ul>  
    
-<h2>3. My GitHub Link</h2>
-
-<ul dir="auto">
-<li>
-<p dir="auto"><a href="https://github.com/LolaGM">Lola García Morcillo</a> - Developer</p>
-</li>
-</ul>
-
-<h2>4. Stacks and technologies used</h2>
+<h2>3. Stacks and technologies used</h2>
 
  <p align="left">
     <img src= "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
@@ -33,7 +25,16 @@ Dealing with frontend development and uploaded to the repository https://github.
  </p>
  
   
-<h2>5. Other Tools</h2>
+<h2>4. Other Tools</h2>
 
  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></img>
  <img src="https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white"></img>
+
+
+<h2>6. My GitHub Link</h2>
+
+<ul dir="auto">
+<li>
+<p dir="auto"><a href="https://github.com/LolaGM">Lola García Morcillo</a> - Developer</p>
+</li>
+</ul>
