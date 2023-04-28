@@ -12,9 +12,9 @@
             <p id="description" class="heading">Thank you for taking the time to help us improve the platform</p>
             <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
                 <fieldset>
-                    <label for="name-label">Name:<input id="name-label" name="name" type="text" required  placeholder="Enter your name"/></label>
-                    <label for="email-label">Email:<input id="email-label" name="email" type="email" required placeholder="Enter your email"/></label>
-                    <label for="number-label">Age (optional)<input id="number-label" type="number" name="age" min="13" max="100" placeholder="Age"/></label>
+                    <label for="name" id="name-label">Name:<input id="name" name="name" type="text" required  placeholder="Enter your name" value="name"/></label>
+                    <label for="email" id="email-label">Email:<input id="email" name="email" type="email" required placeholder="Enter your email" value="email"/></label>
+                    <label for="number" id="number-label">Age (optional)<input id="number" type="number" name="number" min="13" max="100" placeholder="Enter your age" value="number"/></label>
                     <label for="dropdown">Which option best describes your current role?
                         <select id="dropdown" name="referrer">
                         <option value="">Select current role</option>
@@ -28,9 +28,9 @@
                 </fieldset>
                 <fieldset>
                     <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
-                    <label for="recommendation1"><input id="definitely" type="radio" name="recommendation" class="inline" value="definitely" /> Definitely</label>
-                    <label for="recommendation2"><input id="maybe" type="radio" name="recommendation" class="inline" value="maybe" /> Maybe</label>
-                    <label for="not-sure"><input id="not-sure" type="radio" name="recommendation3" class="inline" value="not-sure" /> Not sure</label>
+                    <label for="definitely"><input id="definitely" type="radio" name="recommendation" class="inline" value="definitely" /> Definitely</label>
+                    <label for="maybe"><input id="maybe" type="radio" name="recommendation" class="inline" value="maybe" /> Maybe</label>
+                    <label for="not-sure"><input id="not-sure" type="radio" name="recommendation" class="inline" value="not-sure" /> Not sure</label>
                 </fieldset>
                 <fieldset>
                     <label for="feature">What is your favorite feature of freeCodeCamp?
@@ -46,37 +46,37 @@
                 <fieldset>
                     <label for="improvements">What would you like to see improved? (Check all that apply)</label>
                         <label for="improvements1">
-                            <input id="improvements1" type="checkbox" name="front-end" class="inline"/> Front-end Projects
+                            <input id="improvements1" type="checkbox" name="front-end" class="inline" value="front"/> Front-end Projects
                         </label>
                         <label for="improvements2">
-                            <input id="improvements2" type="checkbox" name="back-end" class="inline" /> Back-end Projects
+                            <input id="improvements2" type="checkbox" name="back-end" class="inline" value="back" /> Back-end Projects
                         </label>
                         <label for="improvements3">
-                            <input id="improvements3" type="checkbox" name="data-visualization" class="inline" /> Data visualization
+                            <input id="improvements3" type="checkbox" name="data-visualization" class="inline" value="data" /> Data visualization
                         </label>
                         <label for="improvements4">
-                            <input id="improvements4" type="checkbox" name="challenges" class="inline" /> Challenges
+                            <input id="improvements4" type="checkbox" name="challenges" class="inline" value="challenges"/> Challenges
                         </label>
                         <label for="improvements5">
-                            <input id="improvements5" type="checkbox" name="open-source" class="inline" /> Open Source Community
+                            <input id="improvements5" type="checkbox" name="open-source" class="inline" value="community"/> Open Source Community
                         </label>
                         <label for="improvements6">
-                            <input id="improvements6" type="checkbox" name="gitter" class="inline" /> Gitter help rooms
+                            <input id="improvements6" type="checkbox" name="gitter" class="inline" value="gitter"/> Gitter help rooms
                         </label>
                         <label for="improvements7">
-                            <input id="improvements7" type="checkbox" name="videos" class="inline" /> Videos
+                            <input id="improvements7" type="checkbox" name="videos" class="inline" value="videos"/> Videos
                         </label>
                         <label for="improvements8">
-                            <input id="improvements8" type="checkbox" name="meetups" class="inline" /> City Meetups
+                            <input id="improvements8" type="checkbox" name="meetups" class="inline" value="meetups"/> City Meetups
                         </label>
                         <label for="improvements9">
-                            <input id="improvements9" type="checkbox" name="wiki" class="inline" /> Wiki
+                            <input id="improvements9" type="checkbox" name="wiki" class="inline" value="wiki"/> Wiki
                         </label>
                         <label for="improvements10">
-                            <input id="improvements10" type="checkbox" name="forum" class="inline" /> Forum
+                            <input id="improvements10" type="checkbox" name="forum" class="inline" value="forum" /> Forum
                         </label>
                         <label for="improvements11">
-                            <input id="improvements11" type="checkbox" name="additional" class="inline" /> Additional Courses
+                            <input id="improvements11" type="checkbox" name="additional" class="inline" value="additional"/> Additional Courses
                         </label>
                 </fieldset>
                 <fieldset>        
@@ -84,7 +84,7 @@
                         <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
                     </label>
                 </fieldset>
-                <input type="submit" value="Submit" id="sub" />
+                <input type="submit" value="Submit" id="submit" />
             </form>
         </main>    
     </body>
