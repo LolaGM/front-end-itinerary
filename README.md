@@ -9,12 +9,12 @@
 <a href="https://github.com/LolaGM/front-end-itinerary">Front-end itinerary</a></p>
 <p>Exercises and certifications from: </p>   
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-   <img src= "https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green" alt="FreeCodeCamp logo">
-   <a href="https://www.freecodecamp.org/learn" target="_blank"></a>
-   </img>
-   <img src="https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white" alt="Udemy logo">
-      <a href="https://www.udemy.com/course/angular-fernando-herrera" target="_blank"></a>
-   </img>
+   <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src= "https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green" alt="FreeCodeCamp logo"></img>
+   </a>
+   <a href="https://www.udemy.com/course/angular-fernando-herrera" target="_blank">
+      <img src="https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white" alt="Udemy logo"></img>
+   </a>
 </div>
    
 <h2>2. Contents</h2>
