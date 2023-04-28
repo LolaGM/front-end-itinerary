@@ -1,12 +1,17 @@
 <h1> Front-end itinerary from internship at Bosonit</h1>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:1000px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116545851/234549086-60d4465a-8a3f-458b-831e-fefd483a0151.png">
+   <img style="width:1000px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116545851/234549086-60d4465a-8a3f-458b-831e-fefd483a0151.png">
 </div>
 
 <h2>1. Description</h2>
 <p>Exercises and practice from the front-end itinerary during internship at Bosonit company.</p>
 <p>Dealing with frontend development and uploaded to the repository:
 <a href="https://github.com/LolaGM/front-end-itinerary">Front-end itinerary</a></p>
+<p>Exercises and certifications from 
+   <img src= "https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green" alt="FreeCodeCamp logo">
+      <a href="https://www.freecodecamp.org/"></a>
+   </img>
+</p>
 
 <h2>2. Contents</h2>
 <ul>
