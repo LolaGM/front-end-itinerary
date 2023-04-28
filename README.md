@@ -7,12 +7,16 @@
 <p>Exercises and practice from the front-end itinerary during internship at Bosonit company.</p>
 <p>Dealing with frontend development and uploaded to the repository:
 <a href="https://github.com/LolaGM/front-end-itinerary">Front-end itinerary</a></p>
-<p>Exercises and certifications from 
+<p>Exercises and certifications from: </p>   
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
    <img src= "https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green" alt="FreeCodeCamp logo">
-      <a href="https://www.freecodecamp.org/"></a>
+   <a href="https://www.freecodecamp.org/learn" target="_blank"></a>
    </img>
-</p>
-
+   <img src="https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white" alt="Udemy logo">
+      <a href="https://www.udemy.com/course/angular-fernando-herrera" target="_blank"></a>
+   </img>
+</div>
+   
 <h2>2. Contents</h2>
 <ul>
 <li>HTML5 & CSS3</li>
@@ -40,6 +44,6 @@
 
 <ul dir="auto">
 <li>
-<p dir="auto"><a href="https://github.com/LolaGM">Lola García Morcillo</a> - Developer</p>
+<p dir="auto"><a href="https://github.com/LolaGM" target="_blank">Lola García Morcillo</a> - Developer</p>
 </li>
 </ul>
