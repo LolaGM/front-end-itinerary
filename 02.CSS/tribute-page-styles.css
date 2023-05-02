@@ -9,7 +9,7 @@ body {
 }
 main{
     display: block;
-    background-color: rgb(242, 174, 65);
+    background-color: #C39BD3;
     margin:auto;
 }
 
@@ -23,6 +23,14 @@ h1{
     font-weight: bold;
 }
 
+p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.7em;
+
+}
+
 img{
     display: block;
     margin: auto;
@@ -32,19 +40,17 @@ img{
 #img-caption {
     margin: 15px 0 5px 0;
     font-size: 0.6em;
-    color: rgb(242, 174, 65);;
-}
-
-li {
-    margin: 16px 0;
+    color: #633974;
 }
 
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    margin: 16px 0;
+
 }
 ul {
-    max-width: 550px;
+    max-width: 50%;
     margin: 0 auto 50px auto;
     text-align: left;
     line-height: 1.6;
@@ -53,7 +59,7 @@ ul {
     background: white;
     padding: 10px;
     margin: auto;
-    max-width: 500px;
+    max-width: 50%;
 }
 
 figure {
