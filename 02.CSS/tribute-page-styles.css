@@ -1,12 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', 'Roboto','Helvetica Neue', Arial, sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
     color: white;
     margin: 0;
 }
+
 main{
     display: block;
     background-color: #C39BD3;
@@ -16,10 +20,6 @@ main{
 h1{
     display: block;
     font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 
