@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="landing page about ANGULAR framework" />  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="landing-page-styles.css" />
+        <link rel="icon" type="image/x-icon" href="https://angular.io/assets/images/favicons/favicon-32x32.png">
+        <title>My ANGULAR JS landing page</title>
+    </head>
+    <body>        
+        <header id="header">
+            <div class="logo">
+                <a href="https://angular.io/" target="_blank">
+                    <img id="header-img" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" alt="Angular framework logo"/>
+                </a>                
+            </div>       
+            <nav id="nav-bar">
+                <ul class="menu">
+                    <li><a class="nav-link" href="#What_is_Angular?">What is Angular?</a></li>
+                    <li><a class="nav-link" href="#Video">Video</a></li>
+                    <li><a class="nav-link" href="#Courses">Courses</a></li>                   
+                    <li><a class="nav-link" href="#Updates">Updates</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="container-intro">
+                <section>
+                    <h2 id="What_is_Angular?">What is Angular?</h2>
+                    <p class="introduction">Angular (also referred to as "Angular 2+") is a <strong>TypeScript-based</strong>, free and <strong>open-source web application framework </strong>led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. </p>
+                    <p class="introduction">Angular is a <strong>single-page application</strong> framework which is used for creating fast web Applications. It uses concepts of single-page application in which UI is delivered in the beginning of application request and later only data is requested which makes single-page application applications <strong>fast</strong>.</p>                
+                </section>   
+                <section id="video">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/kTUrpg1DCzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+            </div>       
+            <div class="courses-container" id="Courses">                
+                    <div class="course-info" id="beginner">
+                        <h2>AngularJS for Beginners: Getting Started</h2>
+                        <h5>Begginer level</h5>
+                        <ul>
+                            <li>How to use AngularJS in a development environment</li>
+                            <li>Identify how components are used in a workflow.</li>
+                            <li>Create code that illustrates directives, modules, controllers, and filters.</li>
+                        </ul>
+                        <a class="go-to" href="https://www.coursera.org/projects/angularjs-beginners-getting-started" target="_blank">Go to course</a>                        
+                        <ul>                        
+                    </div> 
+                    <div class="course-info" id="intermediate">
+                        <h2>Single Page Web Applications with AngularJS
+                        </h2>
+                        <h5>Intermediate level</h5>
+                        <ul>
+                            <li>Write powerful, maintainable, and testable front end applications faster and with less code</li>
+                            <li>Gain skills in one of the most popular Single Page Application (SPA) frameworks</li>
+                            <li>Developed and backed by Google</li>
+                        </ul>
+                        <a  class="go-to" href="https://www.coursera.org/learn/single-page-web-apps-with-angularjs" target="_blank">Go to course</a>
+                    </div>
+                    <div class="course-info" id="advanced">
+                        <h2>Angular - The Complete Guide (2023 Edition)</h2>                   
+                        <h5>Advanced level</h5>                   
+                        <ul>
+                        <li>From Setup to Deployment, this course covers it all! </li>
+                        <li>You'll learn all about Components, Directives, Services, Forms, Http Access</li>
+                        <li>Authentication, Optimizing an Angular App with Modules and Offline Compilation</li>                       
+                        </ul>
+                        <a class="go-to" href="https://www.udemy.com/course/the-complete-guide-to-angular-2/?matchtype=p&msclkid=903cfeec8fc811c531eb9ab864a55774&utm_campaign=BG-LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_medium=udemyads&utm_source=bing&utm_term=_._ag_1207264180479440_._ad__._kw_%2BAngular+%2Bguide_._de_c_._dm__._pl__._ti_kwd-75454323459394_._li_164526_._pd__._" target="_blank">Go to course</a>
+                    </div>          
+                </section>
+            </div> 
+            <section id="form">
+                <div class="update-form" id="Updates">
+                    <p class="update">Receive our daily ANGULAR JS updates in your e-mail:</p>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input name="email" id="email"  type="email"                       placeholder="Enter your email address"
+                        required/>
+                        <input id="submit" type="submit" value="Receive updates" class="btn" />
+                    </form>
+                </div>                
+            </section>   
+        </div>      
+        <footer>
+            <p class="copyright">&copy; My ANGULAR JS landing page 2023</p>                                 
+            <div class="social-icons">
+                <a  href="https://twitter.com/angular" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a  href="https://www.youtube.com/user/angularjs">
+                    <i class="fab fa-youtube"></i>
+                </a>                         
+            </div>
+        </footer>
+    </body>
+</html>
