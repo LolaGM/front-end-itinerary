@@ -9,14 +9,14 @@ html, body {
     background-color: #EEFEF5;
     line-height: 2.5;
     font-family: 'Poppins', sans-serif;
-
 }
 
 header {
     margin: 10px;
     text-align: left;
-    font-size: 1.8em;
+    font-size: 2em;
     text-decoration: dotted;
+    padding-left: 1px;
 }
 
 .basic{
@@ -29,7 +29,6 @@ header {
     padding: 20px;
     margin-bottom: 110px;
     border-left: solid #145A32 1px;
-
 }
 
 .main-section{
@@ -55,7 +54,7 @@ section article {
     top: 0px;
     left: 0px;
     width: 300px;
-    height: 100%;
+    height: 30%;
 }
 
 section article {
@@ -67,7 +66,7 @@ section article {
 
 #navbar a {
     display: block;
-    padding: 10px 30px;
+    padding: 10px 10px;
     color: #145A32;
     text-decoration: none;
     cursor: pointer;
@@ -110,11 +109,9 @@ li {
 
 a:active, a:hover, a:visited{
     color:#145A32;
-
 }
 
 @media only screen and (max-width: 768px) {
-    
     header {
         margin: 10px;
         text-align: left;
