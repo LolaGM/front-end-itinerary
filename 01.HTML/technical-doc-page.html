@@ -3,155 +3,155 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+        <meta name="description" content="technical documentation page" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="technical-doc-page-styles.css" />
-        <title>HTML tables documentation</title>
-</head>
-<body>
-    <nav>
-    <header >HTML tables Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#HTML_tables">HTML tables</a></li>
-            <li>
-            <a class="nav-link" href="#Table_borders">Table Borders</a></li>
-            <li><a class="nav-link" href="#Table_sizes">Table sizes</a></li>
-            <li><a class="nav-link" href="#Table_headers">Table headers</a></li>
-            <li>
-            <a class="nav-link" href="#Padding_and_Spacing">Table Padding & Spacing</a></li>
-            <li><a class="nav-link" href="#Table_colspan_rowspan">Table Colspan & Rowspan</a></li>
-            <li><a class="nav-link" href="#Table_styling">Table Styling</a></li>
-            <li><a class="nav-link" href="#Table_colgroup">Table Colgroup</a></li>
-        </ul>
+        
+        <title>HTML tables documentation page</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>HTML tables Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#HTML_Tables">HTML Tables</a></li>
+                <li><a class="nav-link" href="#Table_Borders">Table Borders</a></li>
+                <li><a class="nav-link" href="#Table_Sizes">Table Sizes</a></li>
+                <li><a class="nav-link" href="#Table_Headers">Table Headers</a></li>
+                <li><a class="nav-link" href="#Table_Padding_and_Spacing">Table Padding and Spacing</a></li>
+                <li><a class="nav-link" href="#Table_Colspan_and_Rowspan">Table Colspan and Rowspan</a></li>
+                <li><a class="nav-link" href="#Table_Styling">Table Styling</a></li>
+                <li><a class="nav-link" href="#Table_Colgroup">Table Colgroup</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
         </nav>
         <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>HTML Tables</header>
-            <article>
-            <p>This guide assumes you have the following basic background:</p>
-            <ul>
-                <li>
-                A general understanding of the Internet and the World Wide Web
-                (WWW).
-                </li>
-                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                <li>
-                Some programming experience. If you are new to programming, try
-                one of the tutorials linked on the main page about HTML tables.
-                </li>
-            </ul>
-            <p>
-                HTML tables allow web developers to arrange data into rows and columns.
-            </p>
-            <p>
-                Define an HTML Table: A table in HTML consists of table cells inside rows and columns.
-                Table Cells
-                Each table cell is defined by a <td> and a </td> tag.
-                td stands for table data.Everything between <td> and </td> are the content of the table cell.
-            </p>
-            </article>
-        </section>
-        <section class="main-section" id="Table_borders">
-            <header>Table Borders</header>
-            <article>
-                HTML tables can have borders of different styles and shapes.
-                <h4>How To Add a Border</h4>
-                <p>When you add a border to a table, you also add borders around each table cell:
-                    To add a border, use the CSS border property on table, th, and td elements:
+            <section class="main-section" id="HTML_Tables">
+                <header>HTML Tables</header>
+                <article>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul class="basic">
+                    <li>
+                    A general understanding of the Internet and the World Wide Web
+                    (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                    Some programming experience. If you are new to programming, try
+                    one of the tutorials linked on the main page about HTML tables.
+                    </li>
+                    <li>Patience</li>
+                    <li>Will to learn new things!</li>
+                </ul>
+                <p>
+                    HTML tables allow web developers to arrange data into rows and columns.
                 </p>
-                <h4>Collapsed Table Borders</h4>
-                <p>To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
-                    This will make the borders collapse into a single border. </p>                
-                <h4>Style Table Borders</h4>
-                <p>If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border.
-                    Round Table Borders.
-                    With the border-radius property, the borders get rounded corner.</p>
-                <h4>Dotted Table Borders</h4>
-                <p>With the border-style property, you can set the appearance of the border. 	 
+                <p>
+                    Define an HTML Table: A table in HTML consists of table cells inside rows and columns.
+                    Table Cells
+                    Each table cell is defined by a <td> and a </td> tag.
+                    td stands for table data.Everything between <td> and </td> are the content of the table cell.
                 </p>
-            </article>
-        </section>
-        <section class="main-section" id="Table_sizes">
-            <header>Table Sizes</header>
-            <article>
-                <p>HTML tables can have different sizes for each column, row or the entire table.</p>
-                <p>Use the style attribute with the width or height properties to specify the size of a table, row or column.
-                </p>
-                <h4>HTML Table Width</h4>
-                <p>To set the width of a table, add the style attribute to the TABLE element: </p>
-                <h4>HTML Table Column Width</h4>
-                <p>To set the size of a specific column, add the style attribute on a TH or TD element: </p>
-            </article>
-        </section>
-        <section class="main-section" id="Table_headers">
-            <header>Table headers</header>
-            <article>
-                <P>HTML tables can have headers for each column or row, or for many columns/rows.</p>
-                <code>    
-                    <table>
-                        <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Age</th>
-                        </tr>
-                        <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
-                        </tr>
-                        <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
-                        </tr>
-                    </table> 
-                </code>
-            </article>
-        </section>
-        <section class="main-section" id="Padding_and_Spacing">
-            <header>Table Padding & Spacing</header>
-            <p>HTML tables can adjust the padding inside the cells, and also the space between the cells.                      </p>
-            <h4>HTML Table - Cell Padding</h4>
-            <p>Cell padding is the space between the cell edges and the cell content.            
-                By default the padding is set to 0.                
-                To add padding on table cells, use the CSS padding property.</p>
-        </section>
-        <section class="main-section" id="Table_colspan_rowspan">
-            <header>Table Colspan & Rowspan</header>
-            <article>
-                <p>HTML tables can have cells that span over multiple rows and/or columns. </p>
-            <h4>HTML Table - Rowspan</h4>
-            <p>To make a cell span over multiple rows, use the rowspan attribute: 
-            </p>
-            </article>
-        </section>
-        <section class="main-section" id="Table_styling">
-            <header>Table Styling</header>
-            <article>
-            <h4> HTML Table - Zebra Stripes   </h4>
-            <p>        If you add a background color on every other table row, you will get a nice zebra stripes effect.                     </p>
-            </article>
-        </section>
-        <section class="main-section" id="Table_colgroup">
-            <header>Table Colgroup</header>
-            <article>            
-            <p>
-            
-            </p>
-            </article>
-        </section>     
-
-        <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <article>
-            <ul>
-                <li>
-                All the documentation in this page is taken from
-                <a  href="https://www.w3schools.com/html/html_tables.asp"
-                    target="_blank" >www.w3schools.com</a>
-                </li>
-            </ul>
-            </article>
-        </section>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Borders">
+                <header>Table Borders</header>
+                <article>
+                    HTML tables can have borders of different styles and shapes.
+                    <h4>How To Add a Border</h4>
+                    <p>When you add a border to a table, you also add borders around each table cell:
+                        To add a border, use the CSS border property on table, th, and td elements:
+                    </p>
+                    <h4>Collapsed Table Borders</h4>
+                    <p>To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+                        This will make the borders collapse into a single border. </p>                
+                    <h4>Style Table Borders</h4>
+                    <p>If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border.
+                        Round Table Borders.
+                        With the border-radius property, the borders get rounded corner.</p>
+                    <h4>Dotted Table Borders</h4>
+                    <p>With the border-style property, you can set the appearance of the border. 	 
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Sizes">
+                <header>Table Sizes</header>
+                <article>
+                    <p>HTML tables can have different sizes for each column, row or the entire table.</p>
+                    <p>Use the style attribute with the width or height properties to specify the size of a table, row or column.
+                    </p>
+                    <h4>HTML Table Width</h4>
+                    <p>To set the width of a table, add the style attribute to the TABLE element: </p>
+                    <h4>HTML Table Column Width</h4>
+                    <p>To set the size of a specific column, add the style attribute on a TH or TD element: </p>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Headers">
+                <header>Table Headers</header>
+                <article>
+                    <p>HTML tables can have headers for each column or row, or for many columns/rows.</p>
+                    <code>    
+                        table
+                            tr
+                            th                            
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Padding_and_Spacing">
+                <header>Table Padding and Spacing</header>
+                <article>
+                    <p>HTML tables can adjust the padding inside the cells, and also the space between the cells.</p>
+                    <h4>HTML Table - Cell Padding</h4>
+                    <p>Cell padding is the space between the cell edges and the cell content.            
+                        By default the padding is set to 0.                
+                        To add padding on table cells, use the CSS padding property.</p>
+                </article>                
+            </section>
+            <section class="main-section" id="Table_Colspan_and_Rowspan">
+                <header>Table Colspan and Rowspan</header>
+                <article>
+                    <p>HTML tables can have cells that span over multiple rows and/or columns.</p>
+                    <h4>HTML Table - Colspan</h4>
+                    <p>TTo make a cell span over multiple columns, use the colspan attribute</p>
+                    <h4>HTML Table - Rowspan</h4>
+                    <p>To make a cell span over multiple rows, use the rowspan attribute</p>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Styling">
+                <header>Table Styling</header>
+                <article>
+                    <h4> HTML Table - Zebra Stripes   </h4>
+                    <p>If you add a background color on every other table row, you will get a nice zebra stripes effect:</p>
+                    <code>tr:nth-child(even) {
+                        background-color: #D6EEEE;
+                        }
+                    </code>
+                    <h4> HTML Table - Vertical Zebra Stripes</h4>
+                    <p>To make vertical zebra stripes, style every other column, instead of every other row.Set the :nth-child(even) for table data elements like this:</p>
+                        <code>td:nth-child(even), th:nth-child(even) {
+                            background-color: #D6EEEE;}</code>
+                </article>
+            </section>
+            <section class="main-section" id="Table_Colgroup">
+                <header>Table Colgroup</header>
+                <article>  
+                    <h4>HTML Table Colgroup</h4>          
+                    <p>The <code>colgroup</code> element is used to style specific columns of a table.</p>
+                    <h4>HTML Table Colgroup</h4>          
+                    <p>If you want to style the two first columns of a table, use the <code>colgroup</code> and <code>col</code> elements.</p>
+                    <p> The <code>span</code> attribute specifies how many columns that get the style.</p>
+                    <p> The <code>style</code> attribute specifies the style to give the columns.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    <p>All the documentation in this page is taken from:             
+                    <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank" >www.w3schools.com</a>
+                    </p>
+                </article>
+            </section>
         </main>
     </body>
 </html>
