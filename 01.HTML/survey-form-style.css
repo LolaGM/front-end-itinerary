@@ -11,9 +11,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  
   line-height: 1.4;
   color: #f3f3f3;
   font-size: 1rem;
@@ -98,29 +99,16 @@ body {
     margin: 0 0.5em 0 0;
     vertical-align: middle;
   }
-
-  #submit{
-    display: block;
-    width: 100%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #37af65;
-    min-width: 300px;
-    border:none;
-    color: inherit;
-    border-radius: 2px;
-    cursor: pointer;
-  }
   
   input[type="submit"] {
     display: block;
-    width: 100%;
+    width: 60%;
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
     background-color: #37af65;
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 300px;
     border:none;
     color: inherit;
     border-radius: 2px;

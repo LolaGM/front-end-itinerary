@@ -1,227 +1,506 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    body {
+        background-color: white;
+    }
+    /*header and nav elements*/
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: 0px;
+        width: 100%;
+        margin:0%;
+        background-color: #a6120d;
+        padding-top: 2%;
+    }
+    
+    .logo{
+        margin-left:11%;
+    
+    }
+    
+    #header-img{
+        width: 20vw;
+        height: 10vh;
+        margin-bottom: 10%;    
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.2em;
+        font-weight: 100;
+        width: 100%;
+        margin-left: 20%;
+        align-items: center;
+    
+    }
+    
+    #nav-bar{   
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:white;
+        width: 100%;
+        margin-right: 12%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .nav-link{  
+        text-decoration: none;
+        list-style:none;
+        color:white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    /*general container and inside elements*/
+    .container{
+        margin:auto;
+        padding: 5% 12% 3% 12%;
+    }
+    
+    .container-intro{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2%;
+    }
+    
+    .introduction{
+        color: #a6120d;
+        font-size: 1.2em;
+        font-weight: normal;
+        padding-right: 5%;
+        letter-spacing: 50%;
+    }
+    
+    #video{
+        margin: 0 auto;
+        width:700px;
+        height:350px;
+    }
+    
+    h2 {
+        display: block;   
+        color:#a6120d;
+        margin-bottom: 5%;
+    }
+    
+    h5{
+        color: #a6120d;
+        margin-bottom: 2%;
+        font-size: 1em;
+    }
+    
+    .courses-container{
+        display: flex;
+        flex-direction: row; 
+        justify-self: space-between; 
+        flex-wrap: nowrap;  
+        width: 100%;
+    }
+    
+    .course-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: calc(100% / 3);
+        margin: 1px;
+        padding: 1% 3% 5% 3%;
+        border-radius: 5px;
+        background-color: #a6120d;
+        position:relative;    
+    }
+    
+    .course-info ul{
+        list-style-type:circle;
+        color: white;
+    }
+    
+    .course-info h2{
+        padding-top: 25px;
+        text-align: center;
+        color: white;
+    }
+        
+    .course-info h5{
+        padding-top: 5px;
+        text-align: center;
+        color: white;
+    }
+    
+    /*anchor button styles*/
+    
+    .go-to-btn{
+        position: absolute;
+        top:85%;
+    }
+    
+    .go-to{
+        width: 100px;
+        height: 30px;
+        background-color: white;
+        color: #a6120d;
+        text-decoration: none;
+        padding:5px 6px;
+        cursor:pointer;
+        border-radius: 3px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    .go-to:hover{
+        width: 100px;
+        height: 30px;
+        background-color: #a6120d;
+        color: white;
+        border:white 1px solid;
+        text-decoration: none;
+        padding:5px 6px;
+        cursor:pointer;
+        border-radius: 3px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    /*receive emails form */
+    
+    .update-form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content:center;
+        padding-top: 2%;
+    }
+    
+    .update{
+        color: #a6120d;
+        font-size: 1.2em;
+        padding-right: 5px;
+    }
+    
+    input{
+        margin-left: 2px;
+        padding: 2px;
+    }
+    
+    input[type="submit"]{
+        background-color: #a6120d;
+        color: white;
+        padding: 4px 5px;
+        border:none;
+        font-size: 0.9em;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    /*footer section*/
+    
+    footer{
+        display: flex;
+        color: white;
+        min-height: 100px;
+        width: 100%;
+        background-color: #a6120d;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top:2%;
+    }
+    
+    .footer-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 0.9em;
+        color: white;
+        font-weight: 100;
+        border:yellow solid;
+    }
+    
+    .footer-links li a{
+        text-decoration: none;
+        border:black solid;
+    }
+    
+    .copyright{
+        color: white;
+    }
+    
+    .social-icons{  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        color:white;
+        font-size: 1.5em;
+        margin-right: 5px;
+    }
+    
+    .social-icons a{
+        text-decoration: none;
+        color: white;
+        padding-left: 15px;
+    }   
 
-body {
-    background-color: white;
-}
-/*header and nav elements*/
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 0px;
-    padding: 2% 0% 0% 2%;
-    width: 100%;
-    margin:0%;
-    background-color: #a6120d;
-}
+/*media query for mobile version as requested by freecodecamp*/
 
-.logo{
-    margin-left:10%;
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        width: 100%;
+        background-color: #a6120d;
+    }
+    
+    .logo{
+        margin-left:5%;        
+    }
+    
+    #header-img{
+        width: 20vw;
+        height: 5vh;
+        margin-bottom: 2%;
+        margin-left: 2%;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3%;
+        text-decoration: none;
+        list-style: none;
+        font-size: 0.6em;
+        font-weight: 500;
+        padding-bottom: 2%;
+    }
+    
+    #nav-bar{            
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 100%;
+        color:white;
+    }
+    
+    .nav-link{  
+        text-decoration: none;
+        list-style:none;
+        color:white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    /*general container and inside elements*/
+    .container{
+        margin:auto;
+        padding: 2% 5% 5% 5%;
+    }
+    
+    .container-intro{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding: 2% 2%;
+    }
+    
+    .introduction{
+        color: #a6120d;
+        font-size: 0.8em;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        letter-spacing: 1%;
+    }
+    
+    #video{
+        margin: 0 auto;
+        width:315px;
+        height:250px;
+    }
+    
+    h2 {
+        display: block;   
+        color:#a6120d;
+        margin-bottom: 5%;
+        font-size: 0.9em;;
+    }
+    
+    h5{
+        color: #a6120d;
+        margin-bottom: 2%;
+        font-size: 0.7em;
+    }
+    
+    .courses-container{
+        display: flex;
+        flex-direction: column; 
+        justify-self: space-between; 
+        flex-wrap: nowrap;  
+        width: 100%;
+    }
+    
+    .course-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        margin: 2%;
+        padding: 5% 10% 25% 10%;
+        border-radius: 5px;
+        background-color: #a6120d;
+        position:relative;    
+    }
+    
+    .course-info ul{
+        list-style-type:circle;
+        color: white;
+        font-size: 0.8em;
+    }
+    
+    .course-info h2{
+        padding-top: 25px;
+        text-align: center;
+        color: white;
+        font-size: 1em;
+
+    }
+    
+    .course-info h5{
+        padding-top: 3px;
+        text-align: center;
+        color: white;
+        font-size: 0.9em;
+
+    }
+    
+    /*anchor button styles*/
+    
+    .go-to-btn{
+        position: absolute;
+        top:80%;
+    }
+    
+    .go-to{
+        width: 100px;
+        height: 30px;
+        background-color: white;
+        color: #a6120d;
+        text-decoration: none;
+        padding:5px 6px;
+        cursor:pointer;
+        border-radius: 3px;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    
+    .go-to:hover{
+        width: 100px;
+        height: 30px;
+        background-color: #a6120d;
+        color: white;
+        border:white 1px solid;
+        text-decoration: none;
+        padding:5px 6px;
+        cursor:pointer;
+        border-radius: 3px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    /*receive emails form */
+    
+    .update-form{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        padding-top: 2%;
+    }
+    
+    .update{
+        color: #a6120d;
+        font-size: 0.8em;
+        padding-right: 5px;
+    }
+    
+    input{
+        margin-left: 2px;
+        padding: 2px;
+    }
+    
+    input[type="submit"]{
+        background-color: #a6120d;
+        color: white;
+        padding: 4px 5px 4px 5px;
+        border:none;
+        font-size: 0.9em;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    /*footer section*/
+    
+    footer{
+        display: flex;
+        color: white;
+        min-height: 100px;
+        width: 100%;
+        background-color: #a6120d;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8%;
+        padding-right: 5%;
+        padding-top:10%;
+    }
+    
+    .footer-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 1em;
+        color: white;
+    }
+    
+    .footer-links li a{
+        text-decoration: none;
+        border:black solid;
+    }
+    
+    .copyright{
+        color: white;
+        font-size: 0.8em;
+
+    }
+    
+    .social-icons{  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        color:white;
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    
+    .social-icons a{
+        text-decoration: none;
+        color: white;
+        padding-left: 15px;
+    }
+    
 }
-
-#header-img{
-    width: 20vw;
-    height: 10vh;
-    margin-bottom: 10%;
-}
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.2em;
-    font-weight: 100;
-    padding-bottom: 5%;
-}
-
-#nav-bar{    
-    margin-right: 10%;
-    margin-left: 20%;
-    width: 100%;
-    color:white;
-}
-
-.nav-link{  
-    text-decoration: none;
-    list-style:none;
-    color:white;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-/*general container and inside elements*/
-.container{
-    margin:auto;
-    padding: 5% 12% 3% 12%;
-}
-
-.container-intro{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2%;
-}
-
-.introduction{
-    color: #a6120d;
-    font-size: 1.2em;
-    font-weight: normal;
-    padding-right: 5%;
-    letter-spacing: 2%;
-}
-
-#video{
-    margin: 0 auto;
-}
-
-h2 {
-    display: block;   
-    color:#a6120d;
-    margin-bottom: 5%;
-}
-
-h5{
-    color: #a6120d;
-    margin-bottom: 2%;
-    font-size: 1em;
-}
-
-.courses-container{
-    display: flex;
-    flex-direction: row; 
-    justify-self: space-between; 
-    flex-wrap: nowrap;  
-    width: 100%;
-}
-
-.course-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    width: calc(100% / 3);
-    margin: 1px;
-    padding:0 25px 15px 35px;
-    border-radius: 5px;
-    background-color: #a6120d;
-}
-
-.course-info ul{
-    list-style-type:circle;
-    color: white;
-}
-
-.course-info h2{
-    padding-top: 25px;
-    text-align: center;
-    color: white;
-}
-
-.course-info h5{
-    padding-top: 5px;
-    text-align: center;
-    color: white;
-}
-
-.go-to{
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    color: #a6120d;
-    text-decoration: none;
-    padding:5px;
-    cursor:pointer;
-    border-radius: 3px;
-    margin-top:15px;
-    top: 95%;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.update-form{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content:center;
-    padding-top: 2%;
-}
-
-.update{
-    color: #a6120d;
-    font-size: 1.2em;
-    padding-right: 5px;
-}
-
-input{
-    margin-left: 2px;
-    padding: 2px;
-}
-
-input[type="submit"]{
-    background-color: #a6120d;
-    color: white;
-    padding: 4px 5px 4px 5px;
-    border:none;
-    font-size: 0.9em;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-/*footer section*/
-
-footer{
-    display: flex;
-    color: white;
-    min-height: 100px;
-    width: 100%;
-    background-color: #a6120d;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top:2%;
-    align-items: center;
-}
-
-.footer-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 0.9em;
-    color: white;
-    font-weight: 100;
-    border:yellow solid;
-}
-
-.footer-links li a{
-    text-decoration: none;
-    border:black solid;
-}
-
-.copyright{
-    color: white;
-}
-
-.social-icons{  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    color:white;
-    font-size: 1.5em;
-    margin-right: 5px;
-}
-
-.social-icons a{
-    text-decoration: none;
-    color: white;
-    padding-left: 15px;
-}
-
