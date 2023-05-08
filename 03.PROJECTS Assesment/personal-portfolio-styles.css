@@ -3,13 +3,20 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Nunito",sans-serif;
+    font-family: 'Handlee', cursive;
 }
 
 :root{
     --navbar-color1:#2A2F4F;
     --navbar-color2:#917FB3;
-    --font-color:#E5BEEC;
+    --background-color:#917FB3;
+    --background-color2:#FDE2F3;
+    --font-color:white;
+
+}
+
+body{
+    background-color: var(--background-color);
 }
 /*media query mobile first*/
 
@@ -20,7 +27,7 @@
     }
 
     .header-menu a{
-        color:#FDE2F3;
+        color:var(--font-color);
         display: flex;
 
     
