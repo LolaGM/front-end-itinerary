@@ -9,7 +9,7 @@
 :root{
     --navbar-color1:#2A2F4F;
     --navbar-color2:#917FB3;
-    --navbar-color3:#E5BEEC;
+    --font-color:#E5BEEC;
 }
 /*media query mobile first*/
 
@@ -46,7 +46,7 @@
 
 @media only screen and (min-width: 1024px) {
     .header-menu{
-        background: linear-gradient(135deg, var(--navbar-color1) 30%, var(--navbar-color2),var(--navbar-color3));
+        background: linear-gradient(135deg, var(--navbar-color1) 30%, var(--navbar-color2));
 
     }
 
