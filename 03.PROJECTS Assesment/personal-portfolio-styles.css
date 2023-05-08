@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Nunito",sans-serif;
+}
+
+:root{
+    --navbar-color1:#2A2F4F;
+    --navbar-color2:#917FB3;
+    --navbar-color3:#E5BEEC;
+}
+/*media query mobile first*/
+
+@media only screen and (min-width: 360px) {
+    .header-menu{
+        background: linear-gradient(135deg, var(--navbar-color1) 60%, var(--navbar-color2));
+        
+    }
+
+    .header-menu a{
+        color:#FDE2F3;
+        display: flex;
+
+    
+    }
+
+
+    .logo{
+        width: 50%;
+        height: 100%;
+        border:yellow solid;
+        margin:2%;
+
+    }
+
+
+
+
+}
+
+
+
+/*media query for desktop*/
+
+@media only screen and (min-width: 1024px) {
+    .header-menu{
+        background: linear-gradient(135deg, var(--navbar-color1) 30%, var(--navbar-color2),var(--navbar-color3));
+
+    }
+
+
+    .logo{
+        width: 15%;
+        height: 50%;
+
+    }
+
+}
