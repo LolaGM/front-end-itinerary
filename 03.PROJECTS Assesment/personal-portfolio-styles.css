@@ -4,41 +4,213 @@
     padding: 0;
     border: 0;
     font-family: 'Handlee', cursive;
+    color: var(--font-color);
 }
 
 :root{
-    --navbar-color1:#2A2F4F;
-    --navbar-color2:#917FB3;
-    --background-color:#917FB3;
-    --background-color2:#FDE2F3;
-    --font-color:white;
+    --color1:#2A2F4F;
+    --color2:#917FB3;
+    --color3:#E5BEEC;
+    --color4:#FDE2F3;
+    --font-color:white;   
+}
+
+html{
+    height: 100%;
+    background: var(--color1); 
+    background: no-repeat;
 
 }
 
 body{
-    background-color: var(--background-color);
+    height: 100%;
 }
 /*media query mobile first*/
 
 @media only screen and (min-width: 360px) {
-    .header-menu{
-        background: linear-gradient(135deg, var(--navbar-color1) 60%, var(--navbar-color2));
+    html{
+        height: 100%;
+        background: var(--color1);        
+        background-image: linear-gradient(var(--color1), var(--color2));
+        background-attachment: fixed;        
+    }
+    
+    .general-container{
+        height: 100%;
+        width: 100%;
+        margin:0 auto;
+        padding-left:2%;
+        padding-right: 2%;
+    }
+
+    /*header and nav section*/
+    header{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        padding-left: 1%;
+        top: 2%;
+        width: 95%;
+        margin:0 auto;
+    }    
+
+    .logo{
+        width: 30%;
+        height: 60%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        border:green  1px;
+        list-style: none;
+        text-decoration: none;
+
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        top: 15%;
+        width: 100%;
+        list-style: none;
+        text-decoration: none;
+
+    }  
+
+    .nav-list ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border:brown solid 1px;
+
+    }
+
+    .nav-list li{
+        display:inline;
+        padding:8px;
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+    } 
+    
+    .nav-list li a{
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+        padding: 2%;
+        
+    }  
+
+    .nav-list li a:active,a:visited{
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+    } 
+    
+    .nav-list li a:hover{
+        cursor:pointer;
+        list-style: none;
+        color:var(--color3);
+    }  
+
+   
+
+    /*welcome section*/
+
+    .welcome-section{
+        margin-top: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left:3%;
+        margin-right:3%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2%;
+
+    }
+
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .profile-photo{
+        width: 40%;
+        border-radius: 50%;        
+        border: 5px solid var(--color3);       
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+
+    .welcome-section p{
+        font-size: 1em;
+    }
+
+    /*projects section*/
+
+    .projects-section{
+        display: flex;
+        flex-direction: column;
+        margin-left:3%;
+        margin-right:3%;
+    }
+
+    .projects-section h2{
+        text-align: center;
+        margin-top: 2%;
+
+    }
+
+    hr{
+        border:2px solid var(--color3);
+        width: 40%;
+        border-radius: 60%;
+        margin: 1% 30% 2% 30%;
         
     }
 
-    .header-menu a{
-        color:var(--font-color);
-        display: flex;
+    footer{
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+        left:1%;
+        width: 100%;
+        margin:0;
+        font-size: 1em;       
 
-    
+    }
+
+    footer h2{
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .contact-links footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border:#2A2F4F solid 1;
     }
 
 
-    .logo{
-        width: 50%;
-        height: 100%;
-        border:yellow solid;
-        margin:2%;
+    .contact-links a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none !important;
+        border:#2A2F4F solid 1;
 
     }
 
@@ -52,15 +224,190 @@ body{
 /*media query for desktop*/
 
 @media only screen and (min-width: 1024px) {
-    .header-menu{
-        background: linear-gradient(135deg, var(--navbar-color1) 30%, var(--navbar-color2));
+    html{
+        height: 100%;
+        background: var(--color1);        
+        background-image: linear-gradient(var(--color1), var(--color2));
+        background-attachment: fixed;        
+    }
+    
+    .general-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*header and nav section*/
+    header{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        padding-left: 5%;
+        padding-right: 10%;
+        top: 5%;
+        width: 95%;
+        margin:0 auto;
+    }    
+
+    .logo{
+        width: 30%;
+        height: 60%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        text-decoration: none;
 
     }
 
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        top: 15%;
+        width: 100%;
+        list-style: none;
+        text-decoration: none;
 
-    .logo{
-        width: 15%;
-        height: 50%;
+    }  
+
+    .nav-list ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border:brown solid 2px;
+
+    }
+
+    .nav-list li{
+        display:inline;
+        padding:15%;
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: bold;
+    } 
+    
+    .nav-list li a{
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+        padding: 2%;
+        
+    }  
+
+    .nav-list li a:active,a:visited{
+        cursor:pointer;
+        list-style: none;
+        text-decoration: none;
+    } 
+    
+    .nav-list li a:hover{
+        cursor:pointer;
+        list-style: none;
+        color:var(--color3);
+    }
+
+    /*welcome section*/
+
+    .welcome-section{
+        margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left:3%;
+        margin-right:3%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2%;
+
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.8em;
+    }
+
+    .profile-photo{
+        width: 35%;
+        border-radius: 50%;        
+        border: 15px solid var(--color3);       
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+
+    .welcome-section p{
+        font-size: 1.9em;
+    }
+
+    /*projects section*/
+
+    .projects-section{
+        display: flex;
+        flex-direction: column;
+        margin-left:3%;
+        margin-right:3%;
+    }
+
+    .projects-section h2{
+        text-align: center;
+        margin-top: 2%;
+        font-size: 2.8em;
+
+
+    }
+
+    hr{
+        border:5px solid var(--color3);
+        width: 40%;
+        border-radius: 60%;
+        margin: 1% 30% 2% 30%;
+        
+    }
+
+    footer{
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+        left:1%;
+        width: 100%;
+        margin:0;
+        font-size: 1em;       
+
+    }
+
+    footer h2{
+        text-align: center;
+        margin-top: 2%;
+        font-size: 2.89em;
+
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .contact-links footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border:#2A2F4F solid 1;
+    }
+
+
+    .contact-links a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none !important;
+        border:lime solid 2px;
 
     }
 
