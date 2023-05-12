@@ -51,11 +51,15 @@ body{
         flex-direction: row;
         padding-left: 5%;
         padding-top: 2%;
+        position:fixed;
         top: 0;
         left:0;
-        width: 95%;
+        width: 100%;
         margin:0 auto;
         z-index: 9999;
+        background-color: var(--color2);
+        color:var(--color1);
+        box-shadow: 0 4px 2px -2px var(--color3);
     }    
 
     .logo{
@@ -67,9 +71,9 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        padding-right: 2%;
         align-items: center;
         width: 100%;
-        border:green  1px;
         list-style: none;
         text-decoration: none;
     }
@@ -114,13 +118,13 @@ body{
     .nav-list li a:hover{
         cursor:pointer;
         list-style: none;
-        color:var(--color3);
+        color:var(--color1);
     }  
 
     /*welcome section*/
 
     .welcome-section{
-        margin-top: 10%;
+        margin-top: 40%;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -286,14 +290,16 @@ body{
     /*header and nav section*/
     header{
         display: flex;
-        flex-direction: row;
-        top: 0;
-        left: 0;
+        flex-direction: row;        
         padding-left: 5%;
         padding-right: 10%;
         top: 5%;
-        width: 95%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         margin:0 auto;
+        box-shadow: 0 8px 2px -2px var(--color3);
     }    
 
     .logo{
@@ -309,7 +315,7 @@ body{
         width: 100%;
         list-style: none;
         text-decoration: none;
-
+        padding-right: 5%;
     }
 
     .nav-list{
@@ -363,7 +369,7 @@ body{
     /*welcome section*/
 
     .welcome-section{
-        margin-top: 2%;
+        margin-top: 35%;
         display: flex;
         flex-direction: column;
         text-align: center;
