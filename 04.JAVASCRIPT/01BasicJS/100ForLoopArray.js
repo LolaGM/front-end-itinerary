@@ -12,3 +12,13 @@ Declare e inicialice una variable totalen 0. Use un forciclo para agregar el val
 
  */
 
+// Setup
+const myArr = [2, 3, 4, 5, 6];// array dado
+let total = 0; //variable creada que contendrá el valor que se irá sumando
+for (let i = 0; i < myArr.length; i++) { //bucle FOR con las condiciones
+   total = total + myArr[i]; //total será igual a la suma progresiva que se le irá añadiendo el valor de myArr
+   console.log(myArr[i]); //mostramos por pantalla
+}
+
+console.log(total);//mostramos por pantalla el valor final de total que es 20 tras haber ido sumando los elementos de myArr
+// Only change code below this line
