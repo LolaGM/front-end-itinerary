@@ -21,3 +21,51 @@ Al principio, esto parece contrario a la intuición ya que el valor de n disminu
 
 Hemos definido una función llamada countdowncon un parámetro ( n). nLa función debe usar la recursividad para devolver una matriz que contenga los enteros 1según el nparámetro. Si se llama a la función con un número menor que 1, la función debe devolver una matriz vacía. Por ejemplo, llamar a esta función n = 5debería devolver la matriz [5, 4, 3, 2, 1]. Su función debe usar recursividad llamándose a sí misma y no debe usar bucles de ningún tipo.*/
 
+// Only change code below this line
+function countdown(n){
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countdown(n - 1); // si n es mayor que 1 restale 1
+        countArray.unshift(n); //coloca a ese array al principio ese n
+        return countArray;//devuelve el valor
+    }
+}
+
+countdown(5);
+countdown(10);
+console.log(countdown(5));
+console.log(countdown(10));
+console.log(countdown(20));
+  // Only change code above this line
+
+  ///////////////////
+//otras posibles soluciones:
+//solucion 1
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const arr = countdown(n - 1);
+        arr.unshift(n);
+        return arr;
+    }
+}
+//solucion 2
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const arr = countdown(n - 1);
+        arr.splice(0, 0, n);
+        return arr;
+    }
+}
+//solucion 3
+function countdown(n){
+    return n < 1 ? [] : [n].concat(countdown(n - 1));
+}
+ //solucion 4
+function countdown(n){
+    return n < 1 ? [] : [n, ...countdown(n - 1)];
+}
