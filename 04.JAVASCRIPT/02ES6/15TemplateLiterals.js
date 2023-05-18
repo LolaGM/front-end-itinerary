@@ -1,3 +1,23 @@
+let nombre = "Lola";
+let edad = 42;
+console.log(`Me llamo ${nombre} y tengo ${edad}`);//por pantalla muestro las variables usando comillas invertidas y dentro texto. Para usar variables indico dólar y llaves
+
+//-------------------------reemplazar arreglos:
+let miArreglo = [1,2,3,4];
+console.log(`El arreglo es ${miArreglo}`); //por pantalla muestro: El arreglo es 1,2,3,4 
+console.log(`El arreglo es ${JSON.stringify(miArreglo)}`); //por pantalla muestro: El arreglo es [1,2,3,4]
+
+//------------------------- reemplazar una variable que contiene un objeto
+let persona = {
+  nombre: "Lola",
+  edad: 42
+};
+console.log(`Me llamo ${persona.nombre} y tengo ${persona.edad}`); //muestra: Me llamo Lola y tengo 42
+//Puedo usar esto dentro de una constante y llamarla por consola
+const SALUDO = `Me llamo ${persona.nombre} y tengo ${persona.edad}`;
+console.log(SALUDO);
+
+//----------------------------------------------------------------ejercicio freecodecamp
 const result = {
     success: ["max-length", "no-amd", "prefer-arrow-functions"],
     failure: ["no-var", "var-on-top", "linebreak"],
@@ -10,7 +30,7 @@ function makeList(arr) {//función que contiene como param el arr
     for(let i=0; i < arr.length; i++){
         failureItems.push(//con template literals ponemos un LI y en él contemos entre {}el parámetro arr con cada iteración
             `<li class="text-warning">${arr[i]}</li>`
-        );//cogemos el arraý vacío y lo vamos rellenando en cada iteración del bucle
+        );//cogemos el arraý vacío y lo vamos rellenando en cada iteración del bucle donde llamamos a la variable arr usando dolar y llaves 
     }
     return failureItems;
 }
