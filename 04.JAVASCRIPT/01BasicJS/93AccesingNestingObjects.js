@@ -34,4 +34,4 @@ const myStorage = {
         }
 };
 //guardamos este acceso en una variable y en ella con los puntos vamos accediendo a cada parte. Como glove box tiene un espacio en medio,usamos corchetes
-const gloveBoxContents = myStorage.car.inside["glove box"];;
+const gloveBoxContents = myStorage.car.inside["glove box"];
