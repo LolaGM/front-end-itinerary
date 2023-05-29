@@ -11,7 +11,6 @@ function sentensify(str) {
 console.log(sentensify("May-the-force-be-with-you"));
 console.log(sentensify("Winter.is.coming"));
 
-
 /*
 Combine una matriz en una cadena usando el método de unión
 El joinmétodo se utiliza para unir los elementos de una matriz para crear una cadena. Toma un argumento para el delimitador que se usa para separar los elementos de la matriz en la cadena.
