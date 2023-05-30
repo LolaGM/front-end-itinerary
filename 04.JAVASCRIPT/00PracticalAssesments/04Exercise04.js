@@ -12,7 +12,6 @@ const arrNumber3 = [1,4,7,2];
 //usamos el operador condicional ternario con 3 partes y el operador && para que incluya al 3er array
 
 const commonNumbers = arrNumber1.filter(num =>
-    arrNumber2.length > 0 ? arrNumber2.includes(num) : true && 
-    arrNumber3.length > 0 ? arrNumber3.includes(num) : true );
+    arrNumber2.length > 0 ? arrNumber2.includes(num) : true &&  arrNumber3.length > 0 ? arrNumber3.includes(num) : true );
 
 console.log(commonNumbers);
