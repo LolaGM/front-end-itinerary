@@ -13,6 +13,10 @@ const arrCities2 = [
     {city: 'Jaén', country: 'Spain', capital: false}
 ];
 
+//se pude refactorizar el código no usando funciones y metiendo dentro de console.log directamente el array con los métodos pasados. Se pueden usar las iniciales del objeto en vez del nombre city usamos c por ejemplo:
+//podemos usar la negación ! delante del objeto true/false
+//console.log(arrCities2.filter(c => !c.capital).map(c => ({ city: c.city, isSpain: c.country === "Spain" }));
+
 function getTowns(arrCities) { //función con parámetro array que aplicamos filter
     //filtramos en una variable por town que sea falso ser capital
     const nonCapitalTowns = arrCities.filter(town => town.capital === false);

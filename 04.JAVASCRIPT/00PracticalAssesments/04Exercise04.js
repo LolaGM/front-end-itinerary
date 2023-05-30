@@ -15,3 +15,7 @@ const commonNumbers = arrNumber1.filter(num =>
     arrNumber2.length > 0 ? arrNumber2.includes(num) : true &&  arrNumber3.length > 0 ? arrNumber3.includes(num) : true );
 
 console.log(commonNumbers);
+
+//reduce
+//filter
+//includes

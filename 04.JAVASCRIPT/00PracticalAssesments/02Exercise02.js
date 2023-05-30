@@ -6,13 +6,16 @@ NOTA:In JavaScript, a truthy value is a value that is considered true when encou
 */
 
 const arrDirty = [NaN, 0, 5, false, -1, '', undefined, 3, null, 'test'];
-const truthyValues = arrDirty.filter(Boolean);
+//const truthyValues = arrDirty.filter(Boolean); //esta función BOOLEAN sirve pero usaremos 
+const truthyValues = arrDirty.filter(object => object);
 console.log(truthyValues);
 
-/*se puede usar la expresión !!
+/*se puede usar la expresión ! para no usar ===true o false delante del objeto
+se puede no usar la variable que contiene la llamada a la función si la hay y poner directamente el código dentro de console.log:
 
-const arrDirty = [NaN, 0, 5, false, -1, '',undefined, 3, null, 'test'];
-const truthyValues = arrDirty.filter(value => !!value);
-console.log(truthyValues); // muestra por pantalla [ 5, -1, 3, 'test' ]
+const arrDirty = [NaN, 0, 5, false, -1, '', undefined, 3, null, 'test'];
+
+//console.log(arrDirty.filter(object => object)); //saca por pantalla objetos true
+//console.log(arrDirty.filter(object => !object)); //saca por pantalla objetos false
 
 */
