@@ -1,5 +1,5 @@
-/*
-Ejercicio 1
+/*Ejercicio 1
+
 Dado un array de objetos, obtener el objeto con el id 3
 
 NOTA: console.log(arrNames[2]); es la forma más simple de acceder al arrNames pero aquí para buscar usamos el método filter

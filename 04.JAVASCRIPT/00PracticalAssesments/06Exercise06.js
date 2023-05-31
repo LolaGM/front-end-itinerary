@@ -19,7 +19,9 @@ console.log(roundedResult); // 1.123457
 
 function round(number, decimal){
     //guardamos en constante el número de decimales al que redondear
+    //Math.pow hace que se multiplique por 10 la cantidad que se indique en decimales
     const decimalPlaces = Math.pow(10, decimal);
+    
     //multiplicamos el numero con decimales con el numero de decimales y lo redondeamos y eso lo dividimos 
     return Math.round(number*decimalPlaces) / decimalPlaces;  
 }
@@ -32,3 +34,11 @@ console.log(result2);
 
 let result3 = round(2.5689, 1);
 console.log(result3);
+
+//REFACTORIZATION
+//console.log(round(2.5689, 1));
+
+//otra misma solución en 1 línea desestructurando la función en sus dos parámetros aplicando math round al resultado de multiplicar lo que da math pow por el numero y eso dividirlo por math pow
+const roundNumber = (n,d) => Math.round(n * Math.pow(10,d)) / Math.pow(10,d);
+roundNumber(2.45687, 2);
+

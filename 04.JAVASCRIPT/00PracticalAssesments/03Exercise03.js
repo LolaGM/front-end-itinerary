@@ -1,5 +1,5 @@
-/*
-Ejercicio 3
+/*Ejercicio 3
+
 Dado un array de ciudades, sacar todas las ciudades de España que no sean capitales
 
 */
