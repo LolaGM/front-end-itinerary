@@ -1,7 +1,7 @@
 /*Ejercicio 7
 
 Crea una función que retorne los campos de un objeto que equivalgan a un valor “falsy” después de ser ejecutados por una función específica.
-La fundación debe tener dos parámetros:
+La función debe tener dos parámetros:
 Primer parámetro es un objeto con x número de campos y valores
 Segundo parametro es una funcion que retorne un booleano, que se tiene que aplicar al objeto del primer parámetro
 
@@ -38,8 +38,9 @@ En nuestra función con dos parámetros creamos un objeto vacío para almacenar 
 
 Con bucle for... in recorremos cada campo del objeto (iteramos sobre las propiedades o claves KEY de ese objeto).
 
-Se niega la función dentro de la condición y se aplicando la función al valor clave del objeto usando notación de corchetes []
-Si es cierta, al array vacío se añaden al final con push y su parámetro key esos valores falsos.
+Se verifica si el valor correspondiente al campo actual (o[key]) no cumple con la condición definida por la función f. Para ello, se utiliza la expresión !f(o[key]). Si el valor no cumple con la condición, se ejecuta el bloque de código dentro del if.
+
+Se aplicando la función al valor clave del objeto usando notación de corchetes []
 
 falseFields[key] = o[key] está copiando un campo y su valor del objeto original al objeto falseFields. Esto asegura que el nuevo objeto falseFields tenga los mismos campos y valores que el objeto original, siempre y cuando no cumplan la condición de la función.
 
