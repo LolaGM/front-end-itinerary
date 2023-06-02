@@ -14,17 +14,17 @@ console.log(result); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
 
 */
 
-function chunkArrayInGroups(arr, numElem) {
-    const newArr = [];//declaras un array nuevo vacío que luego retornamos
+function chunkArrayInGroups(array, numElem) {
+    const newArray = [];//declaras un array nuevo vacío que luego retornamos
 
     //recorres con for el bucle original arr y el incremento que sea i con suma de i más size
-    for (let i = 0; i < arr.length; i += numElem) {
-        console.log(arr[i]);//muestro por pantalla 
-        newArr.push(arr.slice(i, i + numElem)); //slice saca una porción de arr empezando desde el índice actual i hasta el indice más el numero de elementos indicado i+numElem
+    for (let i = 0; i < array.length; i += numElem) {
+        console.log(array[i]);//muestro por pantalla 
+        newArray.push(array.slice(i, i + numElem)); //slice saca una porción de arr empezando desde el índice actual i hasta el indice más el numero de elementos indicado i+numElem
         //push agrega ese array cortado al actual que al final de la función devolveremos con todas las iteraciones hechas
-        console.log(newArr);
+        console.log(newArray);
     }
-    return newArr;
+    return newArray;
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2); //muestra [ [ 'a', 'b' ], [ 'c', 'd' ] ]

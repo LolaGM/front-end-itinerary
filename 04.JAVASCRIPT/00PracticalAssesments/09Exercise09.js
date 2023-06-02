@@ -18,7 +18,7 @@ function objectKeysToLowerCase(obj) {
         }
     }
 
-    return lowerKey;;
+    return lowerKey;
 }
 
 const myObject = { NamE: 'Charles', ADDress: 'Home Street' };
@@ -41,6 +41,9 @@ Ahora esto se va a igualar a la clave del objeto final que sale en la función
 Retorna ese objeto
 
 Muestra por pantalla o llama a la función con el parámetro objeto que necesitamos pasar a minúsc
+
+Esta es la solución 1 pero en el archivo 09 vemos otra solución.
+
 
 */
 

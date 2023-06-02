@@ -12,14 +12,14 @@ console.log(result); // {a: 1, c: 3}
 
 */
 
-function falsies(o,f){   
+function falsies(object,funct){   
 
     const falseFields = {};
 
-    for(let key in o){
-        if(!f(o[key])){
-            console.log(o[key]);
-            falseFields[key] = o[key];
+    for(let key in object){
+        if(!funct(object[key])){
+            console.log(object[key]);
+            falseFields[key] = object[key];
         }
     }
 
@@ -29,7 +29,6 @@ function falsies(o,f){
 const result = falsies({ a: 1, b: '2', c: 3 }, x => typeof x === 'string')
 
 console.log(result);
-
 //refactorizado como:
 //console.log(falsies({ a: 1, b: '2', c: 3 }, x => typeof x === 'string'));
 
@@ -45,5 +44,7 @@ Se aplicando la función al valor clave del objeto usando notación de corchetes
 falseFields[key] = o[key] está copiando un campo y su valor del objeto original al objeto falseFields. Esto asegura que el nuevo objeto falseFields tenga los mismos campos y valores que el objeto original, siempre y cuando no cumplan la condición de la función.
 
 Retornamos ese objeto al final de la función con los valores falsos del objeto que le pasemos como parámetro a la función falsies.
+
+
 
 */

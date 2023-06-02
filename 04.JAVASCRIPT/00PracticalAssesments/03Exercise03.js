@@ -14,12 +14,12 @@ const arrCities = [
 ];
 
 
-const notSpanishCapital = arrCities.filter(city => city.country === "Spain" && city.capital === false);
+const notSpanishCapital = arrCities.filter(element => element.country === "Spain" && element.capital === false);
 console.log(notSpanishCapital);
 
 /*se puede usar la expresión ! para no usar ===true o false delante del objeto
 se puede no usar la variable que contiene la llamada a la función si la hay y poner directamente el código dentro de console.log:
 
-console.log(arrCities.filter(city => city.country === "Spain" && !city.capital);
+console.log(arrCities.filter(element => element.country === "Spain" && !element.capital);
 
 */

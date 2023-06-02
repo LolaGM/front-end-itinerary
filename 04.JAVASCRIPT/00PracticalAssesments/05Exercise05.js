@@ -19,10 +19,10 @@ const arrCities2 = [
 
 function getTowns(arrCities) { //función con parámetro array que aplicamos filter
     //filtramos en una variable por town que sea falso ser capital
-    const nonCapitalTowns = arrCities.filter(town => town.capital === false);
+    const nonCapitalTowns = arrCities.filter(element => element.capital === false);
     //en otra variable guardamos el nuevo array con map y le pedimos que muestre city y isSpain
-    const resultTowns = nonCapitalTowns.map(town => {
-        return { city: town.city, isSpain: town.country === 'Spain' };
+    const resultTowns = nonCapitalTowns.map(element => {
+        return { city: element.city, isSpain: element.country === 'Spain' };
     });
 
     return resultTowns; //retorna el resultado de ese mapeo
