@@ -41,7 +41,6 @@
 </p>
 
 <h2>5. My GitHub Link</h2>
-
 <ul dir="auto">
 <li>
 <p dir="auto"><a href="https://github.com/LolaGM" target="_blank">Lola García Morcillo</a> - Developer</p>
