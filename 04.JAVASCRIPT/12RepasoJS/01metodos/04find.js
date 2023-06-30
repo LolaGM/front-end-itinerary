@@ -5,12 +5,25 @@ arr.find(callback[, thisArg])
 
 */
 
-var array1 = [5, 12, 8, 130, 44];
+let array1 = [5, 12, 8, 130, 44];
 
-var found = array1.find(function(element) {
+let found = array1.find(function(element) {
     return element > 10;
 });
 
 console.log(found);
 // expected output: 12
 //12 es el primero que cumple ser mayor pero no el único
+
+let arrayNumber = [11,12,13,14,15,16,17,18];
+
+let foundNumber = arrayNumber.find(element => element > 10);
+console.log(foundNumber);
+// 11 es el primero que cumple ser mayor pero no el único
+
+
+const array2 = ['Lola','Ana', 'Ana', 'Lol'];
+const found2 = array2.find(element => element === 'Ana');
+
+console.log(found2);
+// Ana hay dos pero solo coge a la primera
