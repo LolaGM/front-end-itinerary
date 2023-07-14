@@ -15,7 +15,6 @@ function isBelowThreshold(currentValue) {
 console.log(array1.every(isBelowThreshold));
 // expected output: true porque todos pasan el test
 
-
 let arrayDecimals = [10,20, 30, 40, 50];
 let underFifty = (element) => element < 50;
 console.log(arrayDecimals.every(underFifty));

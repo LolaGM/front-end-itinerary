@@ -3,6 +3,8 @@ The find() method returns a value of the first element in the array that satisfi
 
 arr.find(callback[, thisArg])
 
+solo retorna el primero que cumple pero puede haber más
+
 */
 
 let array1 = [5, 12, 8, 130, 44];
